@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title> Cipher Hunt</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+
+
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+
+
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+
+
+body, html {
+
+  height: 100%;
+
+  line-height: 1.8;
+
+}
+
+
+
+/* Full height image header */
+
+.bgimg-1 {
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-image: url("backgr.jpeg");
+
+  min-height: 100%;
+
+}
+
+
+
+.w3-bar .w3-button {
+
+  padding: 16px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+<div class="w3-top">
+
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+
+    <a href="#home" class="w3-bar-item w3-button w3-wide"></a>
+
+    <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
+
+    <!-- Right-sided navbar links -->
+
+    <div class="w3-right w3-hide-small">
+
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGIN </a>
+
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SIGNUP</a>
+
+    
+
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+
+      <i class="fa fa-bars"></i>
+
+    </a>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN/a>
+
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">SIGNUP</a>
+
+
+
+</nav>
+
+
+
+
+
+
+
+<!-- Header with full-height image -->
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+
+    <span class="w3-jumbo w3-hide-small">CIPHER HUNT</span><br>
+
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">CIPHER HUNT</span><br>
+
+    <span class="w3-large">A One-stop Destination for every Programmer.</span>
+
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Know more</a></p>
+
+  </div> 
+
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  </div>
+
+</header>
+
+
+
+
+
+<!-- About Section -->
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+
+  <h3 class="w3-center">ABOUT THE PLATFORM</h3>
+
+  <p class="w3-center w3-large">Key features of our Platform</p>
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <div class="w3-quarter">
+
+    <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
+      <p class="w3-large">Fast</p>
+
+      <p>Get access to powerful servers , which run your code faster than lightning </p>
+
+    </div>
+
+    <div class="w3-quarter">
+
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+
+      <p class="w3-large">Simple</p>
+
+      <p>It spares you from the headache of the terminal and compiler. Just Click a button to execute your code</p>
+
+    </div>
+
+    <div class="w3-quarter">
+
+     
+
+         <i class="material-icons"  style="font-size: 70px">&#xe337;</i>
+
+      <p class="w3-large">Versatile</p>
+
+      <p>Forget the need for a laptop with compilers, interpreters. You just need a Browser to start coding.</p>
+
+    </div>
+
+    <div class="w3-quarter">
+
+       <i class="material-icons" style="font-size: 70px">&#xe25c; </i>
+
+      <p class="w3-large">Free</p>
+
+      <p>Its absolutely free. Just create a account and start coding!!.</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- Contact Section -->
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+
+  <h3 class="w3-center">CONTACT</h3>
+
+  <p class="w3-center w3-large">Please send us your valuable suggestions, so that we can make our platform better.</p>
+
+  <div style="margin-top:48px">
+
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bangalore, India</p>
+
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +919999999999</p>
+
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: cipherhunt@proton.me</p>
+
+    <br>
+
+    <form action="contact.php" target="_blank" method="post">
+
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+
+      <p>
+
+        <button class="w3-button w3-black" type="submit">
+
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+
+        </button>
+
+      </p>
+
+    </form>
+
+    
+
+  </div>
+
+</div>
+
+
+
+<!-- Footer -->
+
+<footer class="w3-center w3-black w3-padding-64">
+
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <div class="w3-xlarge w3-section">
+
+    <i class="fa fa-facebook-official w3-hover-opacity" ></i>
+
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  </div>
+
+
+
+</footer>
+
+ 
+
+
+
+
+
+
+
+
+
