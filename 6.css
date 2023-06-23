@@ -1,0 +1,20 @@
+.container {
+    position: relative; /* Create a relative positioning context */
+    width: 1475px; /* Set the desired width for the container */
+    height: 725px; /* Set the desired height for the container */
+    background-image: url('https://i.gifer.com/9kGQ.gif');
+    background-size: cover; /* Resize the background image to cover the container */
+  }
+  
+  .content {
+    position: absolute; /* Position the content relative to the container */
+    top: 50%; /* Adjust the top position */
+    left: 50%; /* Adjust the left position */
+    transform: translate(-50%, -50%); /* Center the content horizontally and vertically */
+    width: 350px; /* Set the desired width for the content box */
+    height: 150px; /* Set the desired height for the content box */
+    background-color: white; /* Set the background color for the content box */
+    padding: 20px; /* Add padding to the content box */
+    font-size: large;
+    font-family: Arial, sans-serif;
+  }

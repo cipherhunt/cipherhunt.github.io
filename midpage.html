@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CIPHER HUNT</title>
+  <style>
+    /* CSS Styles */
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url(https://static.vecteezy.com/system/resources/thumbnails/003/042/243/small/abstract-blue-grunge-texture-background-free-vector.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+  }
+
+  
+
+    #header {
+      background-image:url(https://cdn.cbeditz.com/cbeditz/preview/unique-design-black-texture-background-wallpapers-81-11614421239turoqnlkjh.jpg);
+      color: white;
+      padding: 20px;
+      text-align: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px;
+    }
+
+    .card {
+      width: 350px;
+      margin: 40px;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+      text-align: center ;
+
+    }
+    
+
+    .card:hover {
+      transform: translateY(-5px);
+      background-image: url(https://img.freepik.com/free-vector/black-carbon-fiber-texture-pattern-background_1017-33436.jpg?w=360);
+      background-size: cover;
+      background-repeat: repeat;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 500px;
+      margin: 0 auto;
+    
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    #about {
+      opacity: 0;
+      transition: opacity 1s;
+      background-image:url(https://www.shutterstock.com/image-photo/black-cotton-fabric-texture-background-260nw-1096475102.jpg);
+      text-align: center;
+      background-repeat: no-repeat;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #f5f5f5;
+      background-size: cover;
+    }
+
+    /* CSS styles for the fade-in animation */
+    .fade-in {
+      animation: fadeInAnimation 1s forwards;
+    }
+
+    @keyframes fadeInAnimation {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+
+    .card p {
+      font-size: 14px;
+      color: #666666;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    
+    <h1>CIPHER HUNT</h1>
+  </header>
+  <  <div id="container">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1gKUUwLWxOxvvOhzP6cNdxeruc52BYB20tw&usqp=CAU" alt="CEASER" usemap="#map1">
+      <h3>CEASER</h3>
+      <p>Encoding and Decoding</p>
+    </div>
+    <div class="card">
+      <img src="data:image/png;base64,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" alt="Compiler" usemap="#map2">
+      <h3>Terminal</h3>
+      <p>Compiler and Interpretter</p>
+    </div>
+  </br>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzFpMKlBGwZ4Wv8IcMRBlAZEnX2s2-xPtlm1Fz_YcoWfPvlDc_D7ln6l1pZJcMZAvwyzw&usqp=CAU" alt="history" usemap="#map3">
+      <h3>History</h3>
+      <p>Data Backuped</p>
+    </div>
+    <div class="card">
+      <img src="https://images.emojiterra.com/google/android-pie/512px/1f468-1f4bc.png" alt="About User" usemap="#map4">
+      <h3>About User</h3>
+      <p>Who Am I?</p>
+    </div>
+    <!-- Add more cards for movies or series -->
+  </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Our application is a comprehensive platform that provides users with a wide range of features and functionalities centered around the concept of the Caesar cipher, including encoding, decoding, history tracking, and user details. The Caesar cipher, also known as the shift cipher, is a substitution cipher technique where each letter in the plaintext is shifted a certain number of positions down or up the alphabet. 
+      
+      With our application, users can easily encode and decode their messages using the Caesar cipher algorithm. They can input their text, specify the shift value, and our application will generate the corresponding encoded or decoded result. This functionality opens up a world of possibilities for users, allowing them to protect sensitive information or engage in exciting cryptography experiments.
+      
+      One unique aspect of our application is the incorporation of a history tracking feature. Every time a user performs an encoding or decoding operation, the application records the details, including the input text, the shift value, and the resulting output. This history allows users to revisit and access their past encryptions and decryptions, facilitating easy reference and retrieval of important information.
+      
+      In addition to the core functionality, our application also offers a user profile section where users can provide their details, such as name, email, and preferences. This personalized aspect enhances the user experience, allowing individuals to customize the application to suit their specific needs. Moreover, the user profile serves as a hub for managing and organizing their encryption history, providing a centralized location for accessing and reviewing their past activities.
+      
+      Our application is designed with a sleek and intuitive user interface, ensuring that users can navigate through the various features effortlessly. The interface is user-friendly, with clear instructions and input fields that guide users in utilizing the encoding, decoding, and history tracking capabilities. Additionally, we have incorporated responsive design principles, making the application accessible across different devices, including desktops, tablets, and mobile phones.
+      
+      Overall, our Caesar cipher application offers a powerful and user-friendly platform for encoding, decoding, and managing encryption history. With its range of features, personalized user profiles, and intuitive interface, our application empowers users to explore the world of cryptography while maintaining a record of their activities for future reference. Whether it's for educational purposes, secure communication, or simply for fun, our application is a valuable tool in the realm of encryption and decryption.</p>
+  </section>
+  
+  <script>
+    // JavaScript code to trigger the fade-in animation
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var aboutSection = document.getElementById("about");
+      aboutSection.classList.add("fade-in");
+    });
+  </script>
+  
+    <map name="map1">
+  <area shape="rect" coords="0,0,389,130" href="uidci.html">
+  </map>
+  <map name="map2">
+  <area shape="rect" coords="0,0,311,162" href="compile1.php">
+  </map>
+  <map name="map3">
+  <area shape="rect" coords="0,0,225,225" href="history1.html">
+  </map>
+  <map name="map4">
+  <area shape="rect" coords="0,0,512,512" href="aboutuser.php">
+  </map>
+  </map>
+  </body>
+  </html>
+  

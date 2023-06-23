@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .logo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  .gif-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+  }
+ 
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #28a745;
+  }
+  
+  
+.gif-background img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    animation: gif-slide 20s linear infinite;
+  }
+  
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+ 
+  
+  p {
+    text-align: center;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Background Animation */
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .encryption-object,
+  .decryption-object {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('encryption.png');
+    background-size: cover;
+    animation: rotate 20s linear infinite;
+  }
+  
+  .decryption-object {
+    background-image: url('decryption.png');
+    animation-direction: reverse;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
