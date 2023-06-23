@@ -5,3 +5,4 @@ Prerequisites:
 1. PHP
 2. MySQL
 3. Nodejs
+have to be installed.
