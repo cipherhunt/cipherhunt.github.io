@@ -5,4 +5,5 @@ Prerequisites:
 1. PHP
 2. MySQL
 3. Nodejs
+4. Xterm.js
 have to be installed.
