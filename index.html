@@ -1,1 +1,367 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title> Cipher Hunt</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+
+
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+
+
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+#myNavbar{
+
+ 
+
+}
+
+.con{
+
+  color: aliceblue;
+
+  text-align: center;
+
+}
+
+.Please{
+
+  color: aliceblue;
+
+  text-align: center;
+
+}
+
+.w3-container w3-light-grey{
+
+    background-image: url(https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?cs=srgb&dl=pexels-francesco-ungaro-396547.jpg&fm=jpg);
+
+  }
+
+body, html {
+
+  height: 100%;
+
+  line-height: 1.8;
+
+
+
+}
+
+.contact{
+
+  background-image: url(https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?cs=srgb&dl=pexels-francesco-ungaro-396547.jpg&fm=jpg);
+
+}
+
+
+
+/* Full height image header */
+
+.bgimg-1 {
+
+  background-position: center;
+
+  background-size: cover;
+
+  background-image: url("data:image/jpeg;base64,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");
+
+  min-height: 100%;
+
+}
+
+
+
+.w3-bar .w3-button {
+
+  padding: 16px;
+
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+<div class="w3-top">
+
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+
+    <a href="#home" class="w3-bar-item w3-button w3-wide"></a>
+
+    <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
+
+    <!-- Right-sided navbar links -->
+
+    <div class="w3-right w3-hide-small">
+
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+
+      <a href="uidpro.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGIN </a>
+
+      <a href="uidprosignin.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SIGNUP</a>
+
+    
+
+    </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+
+      <i class="fa fa-bars"></i>
+
+    </a>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+
+  <a href="uidpro.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN/a>
+
+  <a href="uidsignin.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGNUP</a>
+
+
+
+</nav>
+
+
+
+
+
+
+
+<!-- Header with full-height image -->
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+
+    <span class="w3-jumbo w3-hide-small">CIPHER HUNT</span><br>
+
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">CIPHER HUNT</span><br>
+
+    <span class="w3-large">A One-stop Destination for every Programmer.</span>
+
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Know more</a></p>
+
+  </div> 
+
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  </div>
+
+</header>
+
+
+
+
+
+<!-- About Section -->
+
+<div class="w3-container" style="padding:128px 16px" id="about">
+
+  <h3 class="w3-center">ABOUT THE PLATFORM</h3>
+
+  <p class="w3-center w3-large">Key features of our Platform</p>
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <div class="w3-quarter">
+
+    <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
+      <p class="w3-large">Fast</p>
+
+      <p>Get access to powerful servers , which run your code faster than lightning </p>
+
+    </div>
+
+    <div class="w3-quarter">
+
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+
+      <p class="w3-large">Simple</p>
+
+      <p>It spares you from the headache of the terminal and compiler. Just Click a button to execute your code</p>
+
+    </div>
+
+    <div class="w3-quarter">
+
+     
+
+         <i class="material-icons"  style="font-size: 70px">&#xe337;</i>
+
+      <p class="w3-large">Versatile</p>
+
+      <p>Forget the need for a laptop with compilers, interpreters. You just need a Browser to start coding.</p>
+
+    </div>
+
+    <div class="w3-quarter">
+
+       <i class="material-icons" style="font-size: 70px">&#xe25c; </i>
+
+      <p class="w3-large">Free</p>
+
+      <p>Its absolutely free. Just create a account and start coding!!.</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- Contact Section -->
+
+<div class="contact" style="padding:128px 16px" id="contact">
+
+  <h3 class="con">CONTACT</h3>
+
+  <p class="Please">Please send us your valuable suggestions, so that we can make our platform better.</p>
+
+  <div style="margin-top:48px">
+
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bangalore, India</p>
+
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +919999999999</p>
+
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: cipherhunt@proton.me</p>
+
+    <br>
+
+    <form action="contact.php" target="_blank" method="post">
+
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+
+      <p>
+
+        <button class="w3-button w3-black" type="submit">
+
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+
+        </button>
+
+      </p>
+
+    </form>
+
+    
+
+  </div>
+
+</div>
+
+
+
+<!-- Footer -->
+
+<footer class="w3-center w3-black w3-padding-64">
+
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <div class="w3-xlarge w3-section">
+
+    <i class="fa fa-facebook-official w3-hover-opacity" ></i>
+
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  </div>
+
+
+
+</footer>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
