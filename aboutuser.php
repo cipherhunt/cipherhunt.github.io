@@ -62,14 +62,17 @@
 
  $result=mysqli_fetch_assoc($result1);
   
-  echo "<div style='color:white;'>
-      <p>Name:".$result["name"]." </p>
-      <p>phonenumber:".$result["phone"]."</p>
-      <p>Email:".$result["email"]."</p>
-      <p>Id:".$result["id"]."</p>
-      <p>location:".$result["location"]."</p>
-      <p>Designation:".$result["designation"]."</p>
-      <p>Organization:".$result["organization"]."</p>
+  echo "<div>
+  <div style='color:white;text-align:center;font-size:30px;font-family: Arial, sans-serif'>
+  <h2>About User</h2>
+      <p>NAME:  ".$result["name"]." </p>
+      <p>PHONE NUMBER:  ".$result["phone"]."</p>
+      <p>EMAIL:  ".$result["email"]."</p>
+      <p>ID:  ".$result["id"]."</p>
+      <p>LOCATION:  ".$result["location"]."</p>
+      <p>DESIGNATION:  ".$result["designation"]."</p>
+      <p>ORGANIZATON:  ".$result["organization"]."</p>
+    </div>
     </div>";
 
 mysqli_close($conn);

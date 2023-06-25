@@ -33,15 +33,13 @@ if($rs)
      </head>
      <body>
         <div class="container">
-            <div class="content">
+            <div class="content" style="height:250px;">
                 <h1>The Account is Successfully Created!!</h1>
-                <a href="uidpro.html"> Click here to go to login page </a> 
+                <a href="uidpro.html"> Click here to go to the Login page </a> 
             </div>
           </div> 
      </body>
- </html>    
-
-        ';
+ </html>    ';
 		
 }
 
