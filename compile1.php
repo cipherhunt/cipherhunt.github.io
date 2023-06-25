@@ -182,13 +182,13 @@
 </div>
 
 <div class="column1">
-  <div class="container"><br><a id="link" href="compile1.php" target="_blank">C</a></div>
+  <div class="container"><br><a id="link" href="compile1.php">C</a></div>
   <div class="container"><br><a id="link" href="compile2.php">C++</a></div>
 
   <div class="container"><br><a id="link"  href="compile3.php">PYTHON</a></div>
 </div>
 
-<div class="container2">
+<div class="container2" style="color:white;">
 
   <div class="container3">
     <h2 class="heading2">Input</h2>
@@ -196,7 +196,15 @@
   </div>
   <h4>OPTION</h6>
   <form action="compile1.php" method="post">
-  <input type="text" name="command"><br>
+ 
+  <input type="radio" name="command" value="1"id="one">
+  <label for="one">Create a new Instance</label>
+    <input type="radio" name="command" value="2"id="two">
+  <label for="two">Type your code</label>
+    <input type="radio" name="command" value="3"id="three">
+  <label for="three">Compile</label>
+    <input type="radio" name="command" value="4"id="four">
+  <label for="four">Delete your instance</label>
     <h6> ENTER YOUR CODE HERE<h6><br>
     <textarea id="codeinput" style="width:100%;" rows="10" name="code"></textarea>
   <input type="submit">
